@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briar Invest</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08111f;
+      color: white;
+    }
+    header {
+      padding: 24px;
+      background: #101d30;
+      text-align: center;
+    }
+    header h1 {
+      color: #38d996;
+      margin: 0;
+    }
+    main {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .card {
+      background: #14243a;
+      padding: 22px;
+      border-radius: 16px;
+      margin-bottom: 18px;
+    }
+    .balance {
+      font-size: 32px;
+      color: #38d996;
+      font-weight: bold;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #38d996;
+      color: #08111f;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .secondary {
+      background: #243852;
+      color: white;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #38506b;
+      background: #08111f;
+      color: white;
+    }
+    .note {
+      color: #b5c4d8;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BRIAR INVEST</h1>
+    <p>Build your financial future</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <p>Demo Account Balance</p>
+      <div class="balance">$1,000.00</div>
+      <p class="note">Sample balance only — no real funds are held.</p>
+    </div>
+
+    <div class="card">
+      <h2>Investment Plans</h2>
+      <p>Starter Plan</p>
+      <p>Explore investment options and learn how they work.</p>
+      <button onclick="alert('Demo only. No investment has been made.')">
+        Explore Plan
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Deposit</h2>
+      <input type="number" placeholder="Enter amount" min="1">
+      <button onclick="alert('Deposits are not enabled yet.')">
+        Deposit
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Withdraw</h2>
+      <input type="number" placeholder="Enter amount" min="1">
+      <button class="secondary"
+        onclick="alert('Withdrawals are not enabled yet.')">
+        Withdraw
+      </button>
+    </div>
+  </main>
+</body>
+</html>
